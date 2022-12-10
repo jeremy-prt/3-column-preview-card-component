@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --Orange: hsl(31, 77%, 52%);
+  --Bleu: hsl(184, 100%, 22%);
+  --Vert: hsl(179, 100%, 13%);
+  --Primary: hsl(0, 0%, 95%);
+  --P: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: var(--Primary);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-weight: 700;
+  color: var(--Primary);
+  font-size: 3em;
+}
+
+p {
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  color: var(--P);
+  margin-top: 40px;
+  font-size: 15px;
+  width: 92%;
+  line-height: 30px;
+}
+
+section {
+  width: 330px;
+  padding: 50px;
+}
+
+img {
+  width: 30%;
+}
+
+section.Orange {
+  background-color: var(--Orange);
+}
+
+section.Bleu {
+  background-color: var(--Bleu);
+}
+
+section.Vert {
+  background-color: var(--Vert);
+}
+
+button {
+  background-color: var(--Primary);
+  border: none;
+  height: 50px;
+  width: 150px;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  margin-top: 80px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+button.BO {
+  color: var(--Orange);
+}
+button.BB {
+  color: var(--Bleu);
+}
+button.BV {
+  color: var(--Vert);
+}
+
+@media only screen and (max-width: 714px) {
+  button {
+    margin-top: 20px;
+  }
+}
